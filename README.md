@@ -9,3 +9,4 @@
 - [ ] Add auto-deploy
 - [ ] Add mutating testing
 - [ ] Add auto size add/substract after deploy
+- [ ] Add themes

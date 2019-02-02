@@ -3,6 +3,7 @@
   "rules": {
     "quotemark": [true, "single", "avoid-escape", "avoid-template"],
     "semicolon": [true, "never"],
-    "ordered-imports": false 
+    "ordered-imports": false,
+    "object-literal-sort-keys": false
   }
 }

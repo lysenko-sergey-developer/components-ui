@@ -1,6 +1,6 @@
 ## Todo list
 
-- [ ] Add jest tests
+- [x] Add jest tests
 - [ ] Add enzyme tests
 - [ ] Add integration with CI
 - [ ] Add auto build for CI
@@ -9,3 +9,4 @@
 - [ ] Add auto-deploy
 - [ ] Add mutating testing
 - [ ] Add auto size add/substract after deploy
+- [ ] Add prettier

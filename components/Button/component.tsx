@@ -8,5 +8,5 @@ class ButtonComponent extends React.Component {
     )
   }
 }
-console.log(ButtonComponent)
+
 export { ButtonComponent }

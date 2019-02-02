@@ -10,3 +10,5 @@
 - [ ] Add mutating testing
 - [ ] Add auto size add/substract after deploy
 - [ ] Add prettier
+- [ ] Add themes
+

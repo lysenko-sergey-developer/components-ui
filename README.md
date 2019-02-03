@@ -12,3 +12,4 @@
 - [ ] Add prettier
 - [ ] Add themes
 
+update

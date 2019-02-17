@@ -2,7 +2,7 @@
 
 - [x] Add jest tests
 - [x] Add enzyme tests
-- [ ] Add integration with CI
+- [x] Add integration with CI
 - [ ] Add auto build for CI
 - [ ] Add more examples
 - [ ] Add Wix like guidlines

@@ -58,8 +58,7 @@
     "jest": "^23.0.1",
     "react-docgen-typescript-loader": "^3.0.1",
     "react-docgen-typescript-webpack-plugin": "^1.1.0",
-    "react-test-renderer": "^16.7.0",
-    "ts-jest": "^23.10.5"
+    "react-test-renderer": "^16.7.0"
   },
   "jest": {
     "setupFiles": [
@@ -75,10 +74,10 @@
       "js",
       "jsx"
     ],
-    "testRegex": "components.+__tests__+./*.+.(tsx|ts)",
     "transform": {
-      "^.+\\.(ts|tsx)$": "ts-jest"
-    }
+      "^.+\\.(js|jsx|ts|tsx)$": "babel-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$"
   },
   "resolutions": {
     "babel-core": "^7.0.0-bridge.0"
@@ -88,7 +87,7 @@
     "build-storybook": "build-storybook",
     "build": "yarn build-lib && build-storybook",
     "tsc": "tsc",
-    "jest": "jest",
+    "test": "jest",
     "coverage": "jest --coverage"
   }
 }

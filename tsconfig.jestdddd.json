@@ -5,8 +5,7 @@
   },
   "jest": {
     "transform": {
-      "^.+\\.jsx?$": "babel-jest", // Adding this line solved the issue
-      "^.+\\.tsx?$": "ts-jest"
+      "^.+\\.(tsx?|jsx?)$": "babel-jest" // Adding this line solved the issue
     },
     // ...
   },

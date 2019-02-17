@@ -1,7 +1,7 @@
 ## Todo list
 
 - [x] Add jest tests
-- [ ] Add enzyme tests
+- [x] Add enzyme tests
 - [ ] Add integration with CI
 - [ ] Add auto build for CI
 - [ ] Add more examples

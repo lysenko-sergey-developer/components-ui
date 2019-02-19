@@ -1,6 +1,6 @@
 [![CircleCI](https://circleci.com/gh/lysenko-sergey-developer/components-ui/tree/master.svg?style=svg)](https://circleci.com/gh/lysenko-sergey-developer/components-ui/tree/master)
 
-## Todo list
+## Todo list 
 
 - [x] Add jest tests
 - [x] Add enzyme tests

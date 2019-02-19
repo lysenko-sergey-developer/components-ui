@@ -32,6 +32,19 @@ jobs:
       - run: yarn ci-scripts:test
 
       # deploy to gh pages
-      - run: yarn ci-scripts:deploy
+      # - run: yarn ci-scripts:deploy
+  deploy-gh:
+    docker:
+      # specify the version you desire here
+      - image: circleci/node:8.10.0
 
-      
+    working_directory: ~/repo
+
+    branches:
+      only:
+        - master
+
+    steps:
+      - checkout
+
+      - run: yarn ci-scripts:deploy

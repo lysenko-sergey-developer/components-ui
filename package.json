@@ -91,6 +91,7 @@
     "tsc": "tsc",
     "test": "jest",
     "coverage": "jest --coverage",
-    "deploy-storybook": "storybook-to-ghpages"
+    "ci-scripts:test": "yarn test",
+    "ci-scripts:deploy": "storybook-to-ghpages -- --ci"
   }
 }

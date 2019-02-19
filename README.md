@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/lysenko-sergey-developer/components-ui/tree/master.svg?style=svg)](https://circleci.com/gh/lysenko-sergey-developer/components-ui/tree/master)
+
 ## Todo list
 
 - [x] Add jest tests

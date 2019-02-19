@@ -14,3 +14,6 @@
 - [ ] Add prettier
 - [ ] Add themes
 - [ ] Add eslint
+- [ ] Add caching for test results
+- [ ] Add caching for deploy gh version
+- [ ] Add ci deploy trigger on master branch changes

@@ -3,11 +3,12 @@
 - [x] Add jest tests
 - [x] Add enzyme tests
 - [x] Add integration with CI
-- [ ] Add auto build for CI
+- [x] Add auto build for CI
 - [ ] Add more examples
 - [ ] Add Wix like guidlines
-- [ ] Add auto-deploy
+- [x] Add auto-deploy
 - [ ] Add mutating testing
 - [ ] Add auto size add/substract after deploy
 - [ ] Add prettier
 - [ ] Add themes
+- [ ] Add eslint

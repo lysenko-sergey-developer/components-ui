@@ -48,3 +48,10 @@ jobs:
       - checkout
 
       - run: yarn ci-scripts:deploy
+  
+workflows:
+  version: 2
+  workflow:
+    jobs:
+    - build
+    - deploy-gh

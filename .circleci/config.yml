@@ -9,15 +9,6 @@ jobs:
       # specify the version you desire here
       - image: circleci/node:8.10.0
 
-      # Specify service dependencies here if necessary
-      # CircleCI maintains a library of pre-built images
-      # documented at https://circleci.com/docs/2.0/circleci-images/
-      # - image: circleci/mongo:3.4.4
-
-      # - git push --set-upstream origin ${CIRCLE_BRANCH}
-      # - git config --global user.email "swdev@6river.com"
-      # - git config --global user.name "CircleCI"
-
     working_directory: ~/repo
 
     steps:
@@ -42,10 +33,5 @@ jobs:
 
       # deploy to gh pages
       - run: yarn ci-scripts:deploy
-          # name: Deploy storybook to gh	
-          # command:  	
-  # workflows:	
-  # version: 2	
-  #   build-deploy:	
-  #   jobs:	
+
       

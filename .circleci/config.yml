@@ -65,7 +65,7 @@ workflows:
   build-deploy:
     jobs:
       - build
-        filters:
+          filters:
             branches:
               ignore: master
       - run-test

@@ -18,3 +18,5 @@
 - [ ] Add caching for deploy gh version
 - [x] Add ci deploy trigger on master branch changes
 - [ ] Optimize CI
+- [ ] React hooks examples
+- [ ]

@@ -64,11 +64,11 @@ workflows:
   version: 2
   build-deploy:
     jobs:
-      - build
+      - build:
           filters:
             branches:
               ignore: master
-      - run-test
+      - run-test:
           requires:
             - build
           filters:

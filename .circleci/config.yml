@@ -32,16 +32,16 @@ jobs:
       # deploy to gh pages
       # - run: yarn ci-scripts:deploy
   run-test:
-    # docker:
+    docker:
       # specify the version you desire here
       - image: circleci/node:8.10.0
 
     working_directory: ~/repo
 
     steps:
-      # - checkout
+      - checkout
 
-      # - run: yarn install
+      - run: yarn install
 
       - restore_cache:
           keys:
@@ -59,9 +59,9 @@ jobs:
     working_directory: ~/repo
 
     steps:
-      # - checkout
+      - checkout
 
-      # - run: yarn install
+      - run: yarn install
 
       - restore_cache:
           keys:

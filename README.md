@@ -1,15 +1,20 @@
-## Todo list
+[![CircleCI](https://circleci.com/gh/lysenko-sergey-developer/components-ui/tree/master.svg?style=svg)](https://circleci.com/gh/lysenko-sergey-developer/components-ui/tree/master)
+
+## Todo list 
 
 - [x] Add jest tests
 - [x] Add enzyme tests
-- [ ] Add integration with CI
-- [ ] Add auto build for CI
+- [x] Add integration with CI
+- [x] Add auto build for CI
 - [ ] Add more examples
 - [ ] Add Wix like guidlines
-- [ ] Add auto-deploy
+- [x] Add auto-deploy
 - [ ] Add mutating testing
 - [ ] Add auto size add/substract after deploy
 - [ ] Add prettier
 - [ ] Add themes
-
-update
+- [ ] Add eslint
+- [ ] Add caching for test results
+- [ ] Add caching for deploy gh version
+- [x] Add ci deploy trigger on master branch changes
+- [ ] Optimize CI

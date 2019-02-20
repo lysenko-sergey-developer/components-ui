@@ -14,8 +14,8 @@
     "@types/react": "^16.7.22",
     "@types/react-dom": "^16.0.11",
     "antd": "^3.13.0",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2",
     "source-map-loader": "^0.2.4",
     "styled-components": "^4.1.3",
     "tslint": "^5.12.1",
@@ -91,6 +91,7 @@
     "tsc": "tsc",
     "test": "jest",
     "coverage": "jest --coverage",
-    "deploy-storybook": "storybook-to-ghpages"
+    "ci-scripts:test": "yarn test",
+    "ci-scripts:deploy": "storybook-to-ghpages -- --ci"
   }
 }

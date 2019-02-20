@@ -40,10 +40,6 @@ jobs:
 
     working_directory: ~/repo
 
-    branches:
-      only:
-        - master
-
     steps:
       - checkout
 
@@ -56,10 +52,6 @@ jobs:
       - image: circleci/node:8.10.0
 
     working_directory: ~/repo
-
-    branches:
-      only:
-        - master
 
     steps:
       - checkout
@@ -74,12 +66,6 @@ workflows:
     jobs:
       - build
       - run-test
-      # - deploy-stage:
-      #     requires:
-      #       - build
-      #     filters:
-      #       branches:
-      #         only: staging
       - deploy:
           requires:
             - build

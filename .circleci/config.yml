@@ -75,9 +75,6 @@ workflows:
             branches:
               ignore: master
       - deploy-gh:
-          requires:
-            - build
-            - run-test
           filters:
             branches:
               only: master

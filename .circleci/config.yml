@@ -61,6 +61,9 @@ jobs:
     steps:
       - checkout
 
+      - run: git config --global user.email "yamaha001001@gmail.com"
+      - run: git config --global user.name "Sergey Lysenko CI"
+
       - run: yarn install
 
       - restore_cache:
@@ -69,7 +72,21 @@ jobs:
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
 
-      - run: yarn ci-scripts:deploy
+      - run: git checkout .
+      - run: |
+          for file in `ls -a`
+          do
+            if [ $file != "." ] && [ $file != ".." ] && [ $file != "node_modules" ] && [ $file != "tsconfig.json" ] && [ $file != ".circleci" ] && [ $file != "package.json" ] && [ $file != ".git" ] && [ $file != ".storybook" ] && [ $file != "components" ]
+            then
+              rm -rf $file
+            fi
+          done
+      - run: yarn storybook-deploy
+      - run: rm package.json && rm -rf node_modules && rm tsconfig.json && rm -rf .storybook && rm -rf components
+      - run: git add .
+      - run: git commit -m 'Deploy Storybook to GitHub Pages :)'
+      - run: git push --force --quiet git@github.com:lysenko-sergey-developer/components-ui.git master:gh-pages
+      
 
 workflows:
   version: 2

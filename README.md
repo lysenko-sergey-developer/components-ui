@@ -11,12 +11,14 @@
 - [x] Add auto-deploy
 - [ ] Add mutating testing
 - [ ] Add auto size add/substract after deploy
-- [ ] Add prettier
+- [x] Add prettier
 - [ ] Add themes
-- [ ] Add eslint
+- [x] Add eslint
 - [ ] Add caching for test results
 - [ ] Add caching for deploy gh version
 - [x] Add ci deploy trigger on master branch changes
 - [ ] Optimize CI
 - [ ] React hooks example
 - [x] Rewrite CI deploy script
+- [ ] Write script for change only diff files by pattern with prettier
+- [ ] discover why jest.setup.js testing with all tests

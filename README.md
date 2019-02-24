@@ -6,19 +6,18 @@
 - [x] Add enzyme tests
 - [x] Add integration with CI
 - [x] Add auto build for CI
+- [x] Add auto-deploy
+- [x] Add prettier
+- [x] Add eslint
+- [x] Add ci deploy trigger on master branch changes
+- [x] Rewrite CI deploy script
+- [x] Discover why jest.setup.js testing with all tests
 - [ ] Add more examples
 - [ ] Add Wix like guidlines
-- [x] Add auto-deploy
 - [ ] Add mutating testing
 - [ ] Add auto size add/substract after deploy
-- [x] Add prettier
 - [ ] Add themes
-- [x] Add eslint
 - [ ] Add caching for test results
 - [ ] Add caching for deploy gh version
-- [x] Add ci deploy trigger on master branch changes
 - [ ] Optimize CI
 - [ ] React hooks example
-- [x] Rewrite CI deploy script
-- [ ] Write script for change only diff files by pattern with prettier
-- [ ] discover why jest.setup.js testing with all tests

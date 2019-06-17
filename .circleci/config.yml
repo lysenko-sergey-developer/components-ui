@@ -7,7 +7,7 @@ jobs:
   build:
     docker:
       # specify the version you desire here
-      - image: circleci/node:8.10.0
+      - image: circleci/node:10.15.3
 
     working_directory: ~/repo
 
@@ -34,14 +34,14 @@ jobs:
   run-test:
     docker:
       # specify the version you desire here
-      - image: circleci/node:8.10.0
+      - image: circleci/node:10.15.3
 
     working_directory: ~/repo
 
     steps:
       - checkout
 
-      - run: yarn install
+      - run: npm install
 
       - restore_cache:
           keys:
@@ -54,7 +54,7 @@ jobs:
   deploy-gh:
     docker:
       # specify the version you desire here
-      - image: circleci/node:8.10.0
+      - image: circleci/node:10.15.3
 
     working_directory: ~/repo
 
@@ -64,8 +64,7 @@ jobs:
       - run: git config --global user.email "yamaha001001@gmail.com"
       - run: git config --global user.name "Sergey Lysenko CI"
 
-      - run: yarn install
-
+      - run: npm install
       - restore_cache:
           keys:
             - v1-dependencies-{{ checksum "package.json" }}
@@ -81,7 +80,7 @@ jobs:
               rm -rf $file
             fi
           done
-      - run: yarn storybook-deploy
+      - run: npm run storybook-deploy
       - run: rm -rf package.json && rm -rf node_modules && rm -rf tsconfig.json && rm -rf .storybook && rm -rf components
       - run: git add .
       - run: git commit -m 'Deploy Storybook to GitHub Pages :)'

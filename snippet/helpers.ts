@@ -1,4 +1,4 @@
-const yargs = require("yargs");
+import * as yargs from "yargs"
 
 const getArgsInCamelCase = () =>
   yargs.argv._.map(component =>
@@ -6,10 +6,8 @@ const getArgsInCamelCase = () =>
       .toLowerCase()
       .replace(
         /(\w)(.+)/,
-        (match, p1, p2, offset, string) => `${p1.toUpperCase()}${p2}`
+        (_, p1, p2) => `${p1.toUpperCase()}${p2}`
       )
   );
 
-module.exports = {
-  getArgsInCamelCase,
-};
+export { getArgsInCamelCase }

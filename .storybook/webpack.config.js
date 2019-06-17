@@ -1,5 +1,6 @@
 const path = require('path');
-module.exports = (baseConfig, env, config) => {
+
+module.exports = async ({ config }) => {
   config.module.rules.push({
     test: /\.(ts|tsx)$/,
     use: [{

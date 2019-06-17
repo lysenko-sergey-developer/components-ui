@@ -1,6 +1,7 @@
-const fs = require('fs')
-const path = require('path')
-const helpers = require('./helpers.ts')
+import * as fs from "fs"
+import * as path from "path"
+
+import * as helpers from './helpers'
 
 helpers.getArgsInCamelCase()
   .map(component =>

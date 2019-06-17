@@ -1,6 +1,7 @@
-const rimraf = require("rimraf")
-const path = require("path")
-const helpers = require('./helpers.ts')
+import * as rimraf from "rimraf"
+import * as path from "path"
+
+import * as helpers from './helpers'
 
 helpers
   .getArgsInCamelCase()

@@ -65,6 +65,7 @@ jobs:
       - run: git config --global user.name "Sergey Lysenko CI"
 
       - run: npm install
+      - run: git init
       - restore_cache:
           keys:
             - v1-dependencies-{{ checksum "package.json" }}

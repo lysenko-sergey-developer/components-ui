@@ -12,6 +12,8 @@
 - [x] Add ci deploy trigger on master branch changes
 - [x] Rewrite CI deploy script
 - [x] Discover why jest.setup.js testing with all tests
+- [x] Add snippet for fast create Component
+- [x] Add snippet for fast delete Component 
 - [ ] Add more examples
 - [ ] Add Wix like guidlines
 - [ ] Add mutating testing

@@ -4,3 +4,6 @@ build
 storybook-static
 .env
 coverage
+.vscode
+yarn.lock
+package-lock.json

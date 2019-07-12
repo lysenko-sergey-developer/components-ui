@@ -24,3 +24,4 @@
 - [ ] Optimize CI
 - [ ] React hooks example
 - [ ] Add support [bit](https://bitsrc.io/) comopnent architecure
+- [ ] Add sonar

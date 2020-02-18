@@ -28,7 +28,6 @@ jobs:
 
       # run tests!
       # - run: yarn ci-scripts:test
-
       # deploy to gh pages
       # - run: yarn ci-scripts:deploy
   run-test:
@@ -65,14 +64,13 @@ jobs:
       - run: git config --global user.name "Sergey Lysenko CI"
 
       - run: npm install
-      - run: git init
+
       - restore_cache:
           keys:
             - v1-dependencies-{{ checksum "package.json" }}
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
 
-      - run: git checkout .
       - run: |
           for file in `ls -a`
           do
@@ -83,10 +81,10 @@ jobs:
           done
       - run: npm run storybook-deploy
       - run: rm -rf package.json && rm -rf node_modules && rm -rf tsconfig.json && rm -rf .storybook && rm -rf components
+      - run: git init
       - run: git add .
       - run: git commit -m 'Deploy Storybook to GitHub Pages :)'
       - run: git push --force --quiet git@github.com:lysenko-sergey-developer/components-ui.git master:gh-pages
-      
 
 workflows:
   version: 2
@@ -95,7 +93,7 @@ workflows:
       - build:
           filters:
             branches:
-              ignore: 
+              ignore:
                 - master
                 - gh-pages
       - run-test:

@@ -83,6 +83,7 @@ jobs:
       - run: rm -rf package.json && rm -rf node_modules && rm -rf tsconfig.json && rm -rf .storybook && rm -rf components
       - run: git init
       - run: git add .
+      - run: ls
       - run: git commit -m 'Deploy Storybook to GitHub Pages :)'
       - run: git push --force --quiet git@github.com:lysenko-sergey-developer/components-ui.git master:gh-pages
 
